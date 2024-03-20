@@ -20,9 +20,9 @@
 ## About The Project
 
 ![Screen Shot](https://i.imgur.com/NaF4cDk.png)
-WEBAPP
+
 ![Screen Shot](https://i.imgur.com/dWoVcaV.png)
-APP
+
 
 ## Built With
 
