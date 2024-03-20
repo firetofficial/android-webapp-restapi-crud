@@ -31,8 +31,6 @@
 - Eclipse: For development purposes, possibly utilized alongside Android Studio or for other aspects of the project.
 - Postman: For testing and debugging the REST API endpoints.
 
-### Creating A Pull Request
-
 
 
 ## Authors
