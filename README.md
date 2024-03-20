@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <h3 align="center">Android Webapp RestAPI</h3>
+  <h3 align="center">Android Webapp RestAPI -  Group 6 - K15DCPM01 </h3>
 
   <p align="center">
     Empowering seamless interaction: Android and Web united through REST API.
