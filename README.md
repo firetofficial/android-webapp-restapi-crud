@@ -29,7 +29,7 @@
 - Android Studio: For developing the Android application frontend.
 - MySQL Workbench: For managing and designing the MySQL database backend.
 - Eclipse: For development purposes, possibly utilized alongside Android Studio or for other aspects of the project.
-- Postman: For testing and debugging the REST API endpoints."
+- Postman: For testing and debugging the REST API endpoints.
 
 ### Creating A Pull Request
 
