@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Button Thêm sản phẩm -->
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:text="Thêm SP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button Sửa sản phẩm -->
+    <Button
+        android:id="@+id/btnEditProduct"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="56dp"
+        android:text="Sửa SP"
+        app:layout_constraintStart_toEndOf="@id/btnAddProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button Xoá sản phẩm -->
+    <Button
+        android:id="@+id/btnDeleteProduct"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="56dp"
+        android:text="Xoá SP"
+        app:layout_constraintStart_toEndOf="@id/btnEditProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- EditText và Button cho chức năng Thêm sản phẩm -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="etProductName,etProductPrice,etProductImage,btnConfirmAddProduct,btnCancelAddProduct"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddProduct" />
+
+    <EditText
+        android:id="@+id/etProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Giá sản phẩm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProductName" />
+
+    <EditText
+        android:id="@+id/etProductImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Link ảnh sản phẩm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProductPrice" />
+
+    <Button
+        android:id="@+id/btnConfirmAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        app:layout_constraintEnd_toStartOf="@id/btnCancelAddProduct"
+        app:layout_constraintTop_toBottomOf="@id/etProductImage" />
+
+    <Button
+        android:id="@+id/btnCancelAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỷ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProductImage"
+        android:visibility="gone" />
+
+    <!-- EditText và Button cho chức năng Sửa sản phẩm -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupEditProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="etEditId,etEditName,etEditPrice,etEditImage,btnConfirmEditProduct,btnCancelEditProduct"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etEditId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="ID sản phẩm cần sửa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEditProduct" />
+
+    <EditText
+        android:id="@+id/etEditName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm mới"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEditId" />
+
+    <EditText
+        android:id="@+id/etEditPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Giá sản phẩm mới"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEditName" />
+
+    <EditText
+        android:id="@+id/etEditImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Link ảnh sản phẩm mới"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEditPrice" />
+
+    <Button
+        android:id="@+id/btnConfirmEditProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        app:layout_constraintEnd_toStartOf="@id/btnCancelEditProduct"
+        app:layout_constraintTop_toBottomOf="@id/etEditImage" />
+
+    <Button
+        android:id="@+id/btnCancelEditProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỷ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEditImage"
+        android:visibility="gone" />
+
+    <!-- EditText và Button cho chức năng Xoá sản phẩm -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupDeleteProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="etDeleteId,btnConfirmDeleteProduct,btnCancelDeleteProduct"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etDeleteId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="ID sản phẩm cần xoá"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDeleteProduct" />
+
+    <Button
+        android:id="@+id/btnConfirmDeleteProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        app:layout_constraintEnd_toStartOf="@id/btnCancelDeleteProduct"
+        app:layout_constraintTop_toBottomOf="@id/etDeleteId" />
+
+    <Button
+        android:id="@+id/btnCancelDeleteProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỷ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDeleteId"
+        android:visibility="gone" />
+
+    <!-- ListView để hiển thị danh sách sản phẩm -->
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddProduct"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
